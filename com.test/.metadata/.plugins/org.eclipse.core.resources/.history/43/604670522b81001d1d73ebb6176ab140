@@ -1,0 +1,10 @@
+package com.arrays;
+
+public class MissNumbsCheck {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

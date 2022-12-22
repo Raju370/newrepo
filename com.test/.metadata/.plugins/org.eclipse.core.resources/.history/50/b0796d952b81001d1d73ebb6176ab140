@@ -1,0 +1,30 @@
+package com.arrays;
+
+public class MissNumbsCheck {
+
+	public static void main(String[] args) {
+		
+		// given array
+		
+		int n = 5;
+		
+		int[] a = {1,2,4};
+		
+		//sum of the two missing numbers = sumOfAllNumbers - sumOfArrayElements
+		
+		int sumOfAllNNumbers = 1+2+3+4+5;
+		
+		int sumOfArr = 0;	
+		for(int i = 0; i < 5; i++) {
+			sumOfAllNNumbers += sumOfArr;
+			
+		}
+		
+		int missingNumbers = sumOfAllNNumbers - sumOfArr;
+		
+		System.out.println("missingNumbers :"+missingNumbers);
+		
+
+	}
+
+}

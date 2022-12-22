@@ -1,0 +1,56 @@
+package com.arrays;
+
+import java.util.Arrays;
+
+public class MissNumbsCheck {
+
+	public static void main(String[] args) {
+
+		// given array
+
+		int n = 5;
+
+		int[] a = { 5, 3, 1 };
+
+		// sort this array in ascending order and then check if any missing numbers
+		// between the range;
+
+		// for sorting i need to sort the array and swap the numbers in ascending form
+
+		for (int i = 0; i < a.length; i++) {
+
+			for (int j = i + 1; j < a.length; j++) {
+
+				if (a[i] > a[j]) {
+
+					int temp = a[i];
+
+					a[i] = a[j];
+
+					a[j] = temp;
+
+				} // endOfIfBlock
+
+			} // endOfInnerForLoop
+
+		} // endOfOuterForLoop
+
+		System.out.println(Arrays.toString(a));
+
+		/*
+		 * assigned a[0]th value to a variable k & comparing this variable K with every
+		 * other element of the array 'a'. starting from the oth index to the last index
+		 * for not equality condition. if the condition is false. Increments the value
+		 * of k by one.
+		 */
+		
+		
+	
+		}
+
+	}// endOfMainMethod
+
+
+
+
+

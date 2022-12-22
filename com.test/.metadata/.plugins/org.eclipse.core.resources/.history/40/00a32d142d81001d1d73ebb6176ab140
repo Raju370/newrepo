@@ -1,0 +1,32 @@
+package com.arrays;
+
+public class MissNumbsCheck {
+
+	public static void main(String[] args) {
+		
+		// given array
+		
+		int n = 3;
+		
+		int[] a = {1,2,4};
+		
+		//sum of the two missing numbers = sumOfAllNumbers - sumOfArrayElements
+		
+		int sumOfAll = (n*n+1)/2; //find the sum of n natural numbers formula
+		
+		System.out.println("sumOfAll :"+ sumOfAll);
+		
+		int sumOfArr = 0;	
+		for(int i = 0; i < 3; i++) {
+			sumOfArr += a[i];
+			}
+				
+		System.out.println("sumOfArr :" +sumOfArr);
+		int missingNumbers =  sumOfAll - sumOfArr;
+		
+		System.out.println("missingNumbers :"+missingNumbers);
+		
+
+	}
+
+}

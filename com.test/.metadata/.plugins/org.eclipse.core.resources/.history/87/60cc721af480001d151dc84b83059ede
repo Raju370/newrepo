@@ -1,0 +1,26 @@
+package com.arrays;
+
+import java.util.Scanner;
+
+public class MissingNumberCheck {
+/**
+ * in order to find the missing number/element from the array.
+ * misingNumber = sumOfAllNaturalNumbers - sumOfArray
+ * sumOfAll = (n*(n+1))/2
+ * 
+ * 
+ * @param args
+ */
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter how many elements user wanted to enter :");	
+		int n = sc.nextInt();
+		
+		//create a new array by using new java operator with the user entered size
+		int[] a = new int[n];
+		
+				
+	}
+	
+}

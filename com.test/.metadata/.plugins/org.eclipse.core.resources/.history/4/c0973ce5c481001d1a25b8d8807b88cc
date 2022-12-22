@@ -1,0 +1,38 @@
+package com.arrays;
+
+import java.util.Arrays;
+
+public class LargestNumberOfArray {
+
+	public static void main(String[] args) {
+
+		// to find the largest of this array
+		int[] a = { 8, 7, 5, 3, 1 };
+
+		System.out.println("size of the array :" + a.length);
+
+		for (int i = 0; i < a.length; i++) {
+
+			// sort the array in ascending order and once elements are sorted order we can
+			// get the largest of the array by a.length - 1; (last element of the array)
+
+			for (int j = i + 1; j < a.length; j++) {
+
+				if (a[i] > a[j]) {
+
+					int temp = a[i];
+					a[i] = a[j];// i swapped first value with second value
+					a[j] = temp;// i swapped second value with first value. by simply assigned the first value
+								// into temp variable and then re assigned this temp value to second value
+
+					System.out.println(Arrays.toString(a));
+					System.out.println();
+				}//endOfIfBlock
+				System.out.println(Arrays.toString(a));
+			}//endOfInnerForLoop
+
+		}////endOfOuterForLoop
+
+	}
+
+}

@@ -1,0 +1,35 @@
+package com.arrays;
+
+public class TwoArraysEqualityCheck {
+
+	public static void main(String[] args) {
+		boolean flag = true;
+
+		int[] a = { 10, 5, 6, 8 };
+		int[] b = { 10, 5, 6, 8 };
+
+		// two arrays are said to be equal if their lengths are equal
+		// assuming array a & array b are not equal
+		if (a.length != b.length) {
+			System.out.println("two arrays are not equal");
+		} else {
+			for (int i = 0; i < a.length; i++) {
+				if (a[i] != b[i]) {
+
+					flag = false;
+					break;
+
+				}
+
+			}
+		}
+		
+		if(flag) {
+			System.out.println("arrays are equal");
+		}else
+		{
+			System.out.println("arrays are not equal");
+		}
+
+	}
+}

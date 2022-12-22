@@ -1,0 +1,55 @@
+package com.arrays;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class MissingNumberCheck {
+/*
+ * in order to find the missing number/element from the array.
+ * misingNumber = sumOfAllNaturalNumbers - sumOfArray
+ * sumOfAll = (n*(n+1))/2
+ * 
+ */
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter how many elements user wanted to enter :");	
+		int n = sc.nextInt();
+		
+		/**
+		 * create a new array by using new java operator with the user entered size (i.e
+		 * array a is created with user entered size n
+		 */
+		int[] a = new int[n];//length of the array is a.length; 
+		
+		//size of the array is obtained
+		System.out.println(a.length);
+		
+		//initialize the array elements by passing the elements from the keyboard
+		//for traversing purpose of array i need a for loop 
+		for(int i = 0; i < a.length; i++) {
+			System.out.println("user enters the elements from the keyboard till the size of the array entered by the user:	");
+			
+			a[i] = sc.nextInt();
+		}//endOfForLoop
+		
+				System.out.println(Arrays.toString(a));
+				
+				int sumOfAllNumbers = (n*(n+1))/2;
+				
+				int sumOfArray = 0;
+				
+				for(int i = 0; i < a.length; i++) {
+					
+					int sumOfArr = sumOfArray + a[i];
+					
+				}
+				
+				int missingNumber = sumOfAll - sumOfArr;
+				
+			
+				System.out.println();
+				
+	}
+	
+}

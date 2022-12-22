@@ -1,0 +1,21 @@
+package com.arrays;
+
+public class LargestNumberOfArray {
+
+	public static void main(String[] args) {
+		
+		//to find the largest of this array
+		int[] a = {2, 4, 6, 1};
+		
+		System.out.println("size of the array :" +a.length);
+		
+		for(int i = 0 ; i < a.length; i++) {
+			
+			
+		}
+		
+		
+
+	}
+
+}

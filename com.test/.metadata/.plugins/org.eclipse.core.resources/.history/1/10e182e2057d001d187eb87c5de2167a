@@ -1,0 +1,29 @@
+package com.list;
+
+import java.util.ArrayList;
+
+public class ArrayListDemo {
+
+	public static void main(String[] args) {
+		
+		ArrayList al = new ArrayList();//arrayList class object is created using using new java keyword/operator and assigned this values to al variable
+		
+		al.add("Ramesh");//Object Ramesh is added to arraylist class
+		al.add(123);
+		al.add(10.5);
+		System.out.println(al);
+		System.out.println();
+		
+		System.out.println("below arrayList is printed=== Insertion order is maintained==Homogenious & Heterogenious data can hold");
+        System.out.println("===  [Ramesh, 123, 10.5]  ====");
+        System.out.println();
+        
+        al.remove(1);//array element from the index 1 is removed.
+        
+        System.out.println("below is the list of arraylist after applying remove()");
+        System.out.println();
+        System.out.println(al);
+        
+	}
+
+}

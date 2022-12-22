@@ -1,0 +1,44 @@
+package com.arrays;
+
+import java.util.Arrays;
+
+public class MergeTwoArrays {
+
+	public static void main(String[] args) {
+
+		int[] a = { 1, 2, 3, 4 };
+		int[] b = { 5, 6, 7, 8 };
+
+		// array c creates with new operator with the size equal to sum of the size of
+		// the array a & array b.
+		int[] c = new int[a.length + b.length];
+
+		for (int i = 0; i < a.length; i++) {
+
+			// assigning the values of the array a to array c starting from the index 0
+			c[i] = a[i]; // c[] = {1,2,3,4,0,0,0,0}
+
+		}
+
+		System.out.print(Arrays.toString(c));// {1,2,3,4,0,0,0,0}
+		
+		System.out.println();
+
+		for (int j = 0; j < b.length; j++) {
+
+			//array b elements added to array c from 5th index since a.length is 4
+			c[j + a.length] = b[j];//{1, 2, 3, 4, 5, 6, 7, 8}
+			
+			System.out.print(c[j + a.length]);
+			System.out.println();
+			System.out.print(c[a.length + j]);
+
+		}
+
+		System.out.print(Arrays.toString(c));//1, 2, 3, 4, 5, 6, 7, 8
+		System.out.println();
+		//System.out.print(0 + a.length);
+
+	}
+
+}
